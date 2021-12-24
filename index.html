@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="relative transition-150 flex flex-col min-h-screen">
+    <header class="bg-yellow-200 text-center py-14 space-y-8">
+      <h1 class="text-8xl">gitmoji</h1>
+      <p class="text-3xl">An emoji guide for your commit messages</p>
+      <div class="w-screen space-x-3">
+        <button
+          class="
+            bg-pink-500
+            text-xl
+            p-2
+            text-white
+            rounded
+            hover:bg-pink-500
+            shadow-[0_8px_0_0_blue]
+            active:shadow-none active:translate-y-2
+            shadow-pink-800
+            duration-150
+            w-24
+          "
+        >
+          GitHub
+        </button>
+        <button
+          class="
+            bg-pink-500
+            text-xl
+            p-2
+            text-white
+            rounded
+            hover:bg-pink-500
+            shadow-[0_8px_0_0_blue]
+            active:shadow-none active:translate-y-2
+            shadow-pink-800
+            duration-150
+            w-24
+          "
+          id="toggle"
+        >
+          Tweet
+        </button>
+      </div>
+    </header>
+    <main class="flex-1 bg-slate-50 w-screen">
+      <div class="md:w-3/5 w-full mx-auto p-6">
+        <div
+          class="
+            flex flex-col
+            md:flex-row
+            justify-center
+            items-center
+            w-full
+            space-x-3
+          "
+        >
+          <input
+            type="text"
+            class="flex-1 bg-gray-100 p-3 md:w-3/5 w-full rounded shadow-md"
+            placeholder="Search your gitmoji"
+          />
+          <div class="inline-block mt-6 md:mt-0 text-lg">
+            <a class="bg-gray-100 p-3 shadow-md mr-2 cursor-pointer"
+              ><i class="fas fa-th"></i
+            ></a>
+            <a class="bg-gray-100 p-3 shadow-md cursor-pointer"
+              ><i class="fas fa-grip-horizontal"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-blue-400 w-screen w-screen">
+      <div
+        class="
+          flex flex-col
+          justify-center
+          items-center
+          lg:flex-row
+          justify-between
+          p-6
+          w-3/5
+          mx-auto
+        "
+      >
+        <p class="text-center">
+          Made with <i class="fas fa-heart text-red-600"></i> by
+          <a href="https://github.com/guchii" class="text-red-600 inline-block"
+            >Shivom Srivastava</a
+          >
+        </p>
+        <nav>
+          <ul class="text-red-600 flex space-x-3">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contributers</a></li>
+            <li><a href="#">Github</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    <i
+      class="
+        fas
+        fa-bars
+        absolute
+        top-0
+        right-0
+        text-4xl text-pink-400
+        hover:text-pink-500
+        transition-150
+        cursor-pointer
+        m-6
+      "
+    ></i>
+  </body>
+</html>
